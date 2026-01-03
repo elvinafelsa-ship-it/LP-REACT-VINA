@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vina Creative Studio | Moms AI Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes glow-pulse {
+        0%, 100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.1); }
+        50% { box-shadow: 0 0 40px rgba(34, 197, 94, 0.2); }
+      }
+      @keyframes fade-in-up {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-glow-pulse {
+        animation: glow-pulse 4s ease-in-out infinite;
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.5s ease-out forwards;
+      }
+      .grid-bg {
+        background-size: 40px 40px;
+        background-image: 
+          linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      }
+      .drop-shadow-glow {
+        filter: drop-shadow(0 0 10px rgba(34, 197, 94, 0.5));
+      }
+      body {
+        background-color: #050b1e;
+        margin: 0;
+        padding: 0;
+        color: white;
+        scroll-behavior: smooth;
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
